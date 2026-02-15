@@ -1,61 +1,43 @@
-# Java DSA & Advanced Interview Prep (Master Kit)
+# Java Interview Master Kit (Junior to Senior+)
 
-This repository is a comprehensive resource for technical interview preparation, covering fundamental Data Structures, Algorithms, Advanced Java Concurrency, and System Design concepts.
+The ultimate repository for Java developers preparing for technical interviews. This kit covers everything from fundamental DSA to senior-level System Design and Concurrency.
 
 ## 🚀 Overview
 
-The project includes **130+ implementation-focused solutions and documents**, demonstrating mastery in:
-- **Java 7 & Java 8+ patterns**: Comparative implementations for all DSA problems.
-- **Concurrency Utilities**: Professional-grade multithreading examples.
-- **System Design**: High-level architectural foundations.
+The repository features **150+ high-quality materials**:
+- **120+ DSA Problems** (Dual Java 7 & 8+ approaches)
+- **10+ Advanced Concurrency Utilities**
+- **4+ System Design Deep Dives**
+- **10+ OOPS & Java Fundamentals Demos**
+- **60+ Question Senior Prep Guide (3+ YOE)**
 
 ## 📂 Project Structure
 
 ### 💻 Data Structures & Algorithms
-Organized into topical packages with detailed `Concept.md` files:
-- `ArrayProblems`: Kadane's Algorithm, Rotate Array, Trapping Rain Water, etc.
-- `StringProblems`: KMP Algorithm, Longest Palindromic Substring, etc.
-- `LinkedListProblems`: Reverse List, Loop Detection, Merging, etc.
-- `StackQueueProblems`: LRU Cache, Min Stack, Sliding Window Max, etc.
-- `MapProblems`: HashMap/HashSet logic, Two-Sum, Group Anagrams, etc.
-- `HeapProblems`: PriorityQueue, Median Finder, Kth Largest, etc.
-- `TreeBSTProblems`: Traversals, LCA, Validate BST, Max Path Sum, etc.
-- `GraphProblems`: BFS/DFS, Dijkstra, Cycle Detection.
-- `DPProblems`: 0/1 Knapsack, LIS, LCS, Edit Distance.
-- `SearchSortProblems`: Quick Sort, Merge Sort, Binary Search, Radix Sort.
-- `BacktrackingProblems`: N-Queens, Sudoku Solver, Word Search.
-- `GreedyProblems`: Huffman Encoding, Activity Selection, Prim's/Kruskal's.
-- `RecursionProblems`: Permutations, Subset Sum, Phone Mnemonics.
+- `Array`, `String`, `LinkedList`, `StackQueue`, `Map`, `Heap`, `TreeBST`, `Graph`, `DP`, `SearchSort`, `Backtracking`, `Greedy`, `Recursion`.
+- *Every package contains a detailed `Concept.md`.*
 
-### 🧵 Advanced Java Concurrency
-Located in `ConcurrencyProblems`:
-- **ExecutorService**: Professional thread pool management.
-- **CompletableFuture**: Asynchronous non-blocking pipelines.
-- **Locking**: `ReentrantLock` and `ReadWriteLock`.
-- **Sync Utilities**: `Semaphore`, `CountDownLatch`, `CyclicBarrier`.
-- **Thread Safety**: Atomic variables, Volatile, and Deadlock detection.
+### 🎨 OOPS & Java Fundamentals
+- `OOPS_Concepts`: Inheritance, Polymorphism, Abstraction, Encapsulation, SOLID principles.
+- `Java_Fundamentals`: JVM Architecture, Exceptions, Generics, Collections Internals, Advanced Streams, Reflection.
 
-### 🏛️ System Design Basics
-Found in the `SystemDesign/` folder:
-- **Core Principles**: Scalability, Availability, Reliability.
-- **Load Balancing**: L4/L7 types and algorithms.
-- **Caching**: Eviction policies and strategies.
-- **Database Sharding**: Partitioning and scalability trade-offs.
+### 🧵 Advanced Concurrency
+- `ConcurrencyProblems`: ExecutorService, CompletableFuture, ReentrantLock, Sync Utilities, Thread Safety.
 
-## 🏗️ How to Run
-1. **Clone the repository**:
+### 🏛️ System Design & Senior Prep
+- `SystemDesign/`: Load Balancing, Caching, Database Sharding.
+- `Interview_Prep_3YOE/`: 60 most asked questions for senior profiles (Microservices, Design Patterns, Saga, etc.).
+
+## 🏗️ How to Use
+1. **Clone**: `git clone https://github.com/Aks396/TOP-DSA-QUESTIONS.git`
+2. **Compile All**:
    ```bash
-   git clone https://github.com/Aks396/TOP-DSA-QUESTIONS.git
-   ```
-2. **Compile the project**:
-   ```bash
-   # Windows PowerShell
    $javaFiles = Get-ChildItem -Path src -Filter *.java -Recurse | Select-Object -ExpandProperty FullName; javac -d bin $javaFiles
    ```
-3. **Run a specific class**:
+3. **Run a Sample (e.g., OOPS)**:
    ```bash
-   java -cp bin ConcurrencyProblems.ExecutorServiceExample
+   java -cp bin OOPS_Concepts.PolymorphismDemo
    ```
 
 ---
-*Built for excellence in engineering.* 🚀
+*Elevating Java interviews to the next level.* 🚀
