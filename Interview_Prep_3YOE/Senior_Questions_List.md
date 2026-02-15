@@ -1,8 +1,9 @@
 # Senior Java Interview Preparation (3+ Years Experience)
 
-This guide contains over 50 of the most frequently asked questions for developers with 3+ years of experience, covering Architecture, Java Internals, and Design Patterns.
+This guide contains over 60 of the most frequently asked questions for developers with 3+ years of experience. **[Detailed Answers for all questions are available here](#detailed-answers).**
 
 ## 🧵 Java Internals & Multithreading (1-15)
+*See [Detailed Answers for Java Internals](file:///d:/Antigravity-IDE/DSA-Question/Interview_Prep_3YOE/01_Java_Internals_Answers.md)*
 1. **Explain the working of ConcurrentHashMap.** How does it differ from a synchronized HashMap?
 2. **What is the Java Memory Model (JMM)?** Explain visibility and reordering.
 3. **Difference between `synchronized` block and `ReentrantLock`.** When to use which?

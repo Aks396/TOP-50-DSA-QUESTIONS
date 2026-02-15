@@ -26,7 +26,11 @@ The repository features **150+ high-quality materials**:
 
 ### 🏛️ System Design & Senior Prep
 - `SystemDesign/`: Load Balancing, Caching, Database Sharding.
-- `Interview_Prep_3YOE/`: 60 most asked questions for senior profiles (Microservices, Design Patterns, Saga, etc.).
+- `Interview_Prep_3YOE/`: 60+ most asked questions **with detailed answers** for senior profiles.
+  - [Java Internals & Multithreading Answers](file:///d:/Antigravity-IDE/DSA-Question/Interview_Prep_3YOE/01_Java_Internals_Answers.md)
+  - [Design Patterns & SOLID Answers](file:///d:/Antigravity-IDE/DSA-Question/Interview_Prep_3YOE/02_Design_Patterns_Answers.md)
+  - [Microservices & Spring Boot Answers](file:///d:/Antigravity-IDE/DSA-Question/Interview_Prep_3YOE/03_Microservices_Spring_Answers.md)
+  - [DB & System Design Answers](file:///d:/Antigravity-IDE/DSA-Question/Interview_Prep_3YOE/04_Database_System_Design_Answers.md)
 
 ## 🏗️ How to Use
 1. **Clone**: `git clone https://github.com/Aks396/TOP-DSA-QUESTIONS.git`
