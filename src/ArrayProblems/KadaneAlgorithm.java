@@ -1,0 +1,56 @@
+package ArrayProblems;
+
+import java.util.Arrays;
+
+/**
+ * Question 1: Find the Largest Sum Contiguous Subarray (Kadane’s Algorithm)
+ * Example: Input: [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+ * Output: 6 (Subarray: [4, -1, 2, 1])
+ */
+public class KadaneAlgorithm {
+
+    /**
+     * Java 7 Approach: Iterative Kadane's Algorithm
+     */
+    public static int findMaxSubarraySum(int[] arr) {
+        int maxSoFar = arr[0];
+        int currentMax = arr[0];
+
+        for (int i = 1; i < arr.length; i++) {
+            currentMax = Math.max(arr[i], currentMax + arr[i]);
+            maxSoFar = Math.max(maxSoFar, currentMax);
+        }
+        return maxSoFar;
+    }
+
+    /**
+     * Java 8+ Approach: Using Stream API reduction
+     */
+    public static int findMaxSubarraySumStream(int[] arr) {
+        class State {
+            int maxSoFar = Integer.MIN_VALUE;
+            int currentMax = 0;
+
+            State accept(int val) {
+                currentMax = Math.max(val, currentMax + val);
+                maxSoFar = Math.max(maxSoFar, currentMax);
+                return this;
+            }
+
+            State combine(State other) {
+                return this;
+            }
+        }
+
+        return Arrays.stream(arr)
+                .boxed()
+                .reduce(new State(), State::accept, State::combine).maxSoFar;
+    }
+
+    public static void main(String[] args) {
+        int[] data = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+        System.out.println("Input: " + Arrays.toString(data));
+        System.out.println("Java 7 Max Sum: " + findMaxSubarraySum(data));
+        System.out.println("Java 8+ Max Sum: " + findMaxSubarraySumStream(data));
+    }
+}
