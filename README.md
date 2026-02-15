@@ -1,53 +1,61 @@
-# Java DSA Questions & Solutions
+# Java DSA & Advanced Interview Prep (Master Kit)
 
-This repository contains high-quality Java solutions for the most important Data Structures and Algorithms (DSA) problems commonly asked in technical interviews.
+This repository is a comprehensive resource for technical interview preparation, covering fundamental Data Structures, Algorithms, Advanced Java Concurrency, and System Design concepts.
 
 ## 🚀 Overview
 
-The project includes **90+ implementation-focused solutions**, each following a dual-coding pattern to demonstrate versatility in Java:
-- **Java 7 Style**: Traditional imperative approach focusing on standard logic and basic syntax.
-- **Java 8+ Style**: Modern functional approach using **Stream API**, Lambdas, and functional interfaces.
+The project includes **130+ implementation-focused solutions and documents**, demonstrating mastery in:
+- **Java 7 & Java 8+ patterns**: Comparative implementations for all DSA problems.
+- **Concurrency Utilities**: Professional-grade multithreading examples.
+- **System Design**: High-level architectural foundations.
 
 ## 📂 Project Structure
 
-The code is organized into topical packages for easy navigation:
+### 💻 Data Structures & Algorithms
+Organized into topical packages with detailed `Concept.md` files:
+- `ArrayProblems`: Kadane's Algorithm, Rotate Array, Trapping Rain Water, etc.
+- `StringProblems`: KMP Algorithm, Longest Palindromic Substring, etc.
+- `LinkedListProblems`: Reverse List, Loop Detection, Merging, etc.
+- `StackQueueProblems`: LRU Cache, Min Stack, Sliding Window Max, etc.
+- `MapProblems`: HashMap/HashSet logic, Two-Sum, Group Anagrams, etc.
+- `HeapProblems`: PriorityQueue, Median Finder, Kth Largest, etc.
+- `TreeBSTProblems`: Traversals, LCA, Validate BST, Max Path Sum, etc.
+- `GraphProblems`: BFS/DFS, Dijkstra, Cycle Detection.
+- `DPProblems`: 0/1 Knapsack, LIS, LCS, Edit Distance.
+- `SearchSortProblems`: Quick Sort, Merge Sort, Binary Search, Radix Sort.
+- `BacktrackingProblems`: N-Queens, Sudoku Solver, Word Search.
+- `GreedyProblems`: Huffman Encoding, Activity Selection, Prim's/Kruskal's.
+- `RecursionProblems`: Permutations, Subset Sum, Phone Mnemonics.
 
-- `ArrayProblems`: Kadane's Algorithm, Rotate Array, Merge Intervals, Trapping Rain Water, etc.
-- `StringProblems`: Longest Palindromic Substring, Group Anagrams, KMP Algorithm, etc.
-- `LinkedListProblems`: Reverse Linked List, Detect & Remove Loop, Add Two Numbers, etc.
-- `StackQueueProblems`: LRU Cache, Min Stack, Sliding Window Maximum, Celebrity Problem, etc.
-- `TreeBSTProblems`: Tree Traversals, Lowest Common Ancestor, Validate BST, Max Path Sum, etc.
-- `GraphProblems`: BFS, DFS, Dijkstra’s Algorithm, Cycle Detection.
-- `DPProblems`: 0/1 Knapsack, Longest Increasing Subsequence, Edit Distance, LCS.
-- `SearchSortProblems`: Merge Sort, Quick Sort, Binary Search, Counting Sort, Radix Sort.
-- `BacktrackingProblems`: N-Queens, Sudoku Solver, Word Search, Rat in a Maze.
-- `GreedyProblems`: Activity Selection, Huffman Encoding, Prim’s & Kruskal’s algorithms.
+### 🧵 Advanced Java Concurrency
+Located in `ConcurrencyProblems`:
+- **ExecutorService**: Professional thread pool management.
+- **CompletableFuture**: Asynchronous non-blocking pipelines.
+- **Locking**: `ReentrantLock` and `ReadWriteLock`.
+- **Sync Utilities**: `Semaphore`, `CountDownLatch`, `CyclicBarrier`.
+- **Thread Safety**: Atomic variables, Volatile, and Deadlock detection.
 
-## 🛠️ Features
+### 🏛️ System Design Basics
+Found in the `SystemDesign/` folder:
+- **Core Principles**: Scalability, Availability, Reliability.
+- **Load Balancing**: L4/L7 types and algorithms.
+- **Caching**: Eviction policies and strategies.
+- **Database Sharding**: Partitioning and scalability trade-offs.
 
-- **Problem Description**: Each source file includes the problem statement as a block comment.
-- **Runnable Main Methods**: Every solution can be executed independently to verify outputs.
-- **Clean Code**: Well-structured logic with appropriate time and space complexity considerations.
-
-## 📖 How to Run
-
+## 🏗️ How to Run
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Aks396/TOP-50-DSA-QUESTIONS.git
+   git clone https://github.com/Aks396/TOP-DSA-QUESTIONS.git
    ```
-
 2. **Compile the project**:
    ```bash
-   javac -d bin src/**/*.java
+   # Windows PowerShell
+   $javaFiles = Get-ChildItem -Path src -Filter *.java -Recurse | Select-Object -ExpandProperty FullName; javac -d bin $javaFiles
    ```
-
-3. **Run a specific problem**:
+3. **Run a specific class**:
    ```bash
-   java -cp bin ArrayProblems.KadaneAlgorithm
+   java -cp bin ConcurrencyProblems.ExecutorServiceExample
    ```
-
-## 📜 Source
-Problems are based on curated lists for technical interview preparation, including the "50 Important DSA problems to crack Interviews" guide.
 
 ---
-*Happy Coding!* 🚀
+*Built for excellence in engineering.* 🚀
